@@ -35,7 +35,7 @@ Create token - if not already done - and store it in local file for reuse.
 
 >>> path_to_token_file = pathlib.Path.cwd() / '.token'
 >>> if not path_to_token_file.exists():
-...   if True: # We do not ask for user/pass within the test environmet
+...   if True: # We do not ask for user/pass within the test environment
 ...       username =  "fossy"
 ...       pw =  "fossy"
 ...   else:
