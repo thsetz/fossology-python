@@ -35,9 +35,9 @@ Create token - if not already done - and store it in local file for reuse.
 
 >>> path_to_token_file = pathlib.Path.cwd() / '.token'
 >>> if not path_to_token_file.exists():
-...   if os.environ.get["FOSSOLOGY_USER","fossy"] and os.environ.get["FOSSOLGY_USER_PASS","fossy"]:
-...       username =  os.environ.get["FOSSOLOGY_USER","fossy"]
-...       pw =  os.environ.get["FOSSOLOGY_USER_PASS","fossy"]
+...   if True: # We do not ask for user/pass within the test environmet
+...       username =  "fossy"
+...       pw =  "fossy"
 ...   else:
 ...       print("Enter your Fossology credentials, e.g. in the test environment 'username: fossy' and 'password: fossy'")
 ...       username = input("username: ")
